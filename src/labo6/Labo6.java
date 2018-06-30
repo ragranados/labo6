@@ -5,6 +5,8 @@
  */
 package labo6;
 
+import labo6.vista.Consulta;
+
 /**
  *
  * @author LN710Q
@@ -15,7 +17,12 @@ public class Labo6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Consulta().setVisible(true);
+            }
+        });
     }
     
 }
